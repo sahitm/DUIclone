@@ -1,8 +1,16 @@
 import React from 'react'
 import discordLogo from "../../assets/discord_main_logo.svg";
 import DownloadIcon from '@mui/icons-material/Download';
+import { useNavigate } from "react-router-dom";
 
 function LandingPage() {
+
+  let navigate = useNavigate();
+
+  function handleLogin() {
+    navigate('/login')
+  }
+
   return (
     <div>
         <div className='header flex h-10v md:px-10 bg-discord-blue w-screen items-center'>
@@ -19,7 +27,7 @@ function LandingPage() {
                 <a className='mr-1'>{title}</a>
             ))}
             </nav>
-        <button className="bg-white hover:bg-slate-100 text-discord-blue rounded-md px-2 pb-1 text-xs">
+        <button className="bg-white hover:bg-slate-100 text-discord-blue rounded-md px-2 pb-1 text-xs" onClick={handleLogin}>
             Login
         </button>
         </div>

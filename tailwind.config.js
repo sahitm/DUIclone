@@ -33,6 +33,11 @@ module.exports = {
         "90v": "90vw",
         "100v": "100vw",
       },
+      backgroundImage: {
+        'bg-pattern': "url('./assets/center_bg_landing_header.svg')",
+        'hero-1': "url('./assets/left_bg_landing_header.svg')",
+        'hero-2': "url('/img/footer-texture.png')",
+      },
 
     },
   },
